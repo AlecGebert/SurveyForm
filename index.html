@@ -1,0 +1,130 @@
+<div class="container">
+ <header class="header">
+ 	<link href="Surveyform.css" rel="stylesheet" type="text/css">
+  <h1 id="title" class="text-center">Music In Your Life Survey Form</h1>
+  <!-- Комментарий -->
+  <p id="description" class="description text-center">Thank you for taking the time to help us.</p>
+   </header>
+  <form id="survey-form">
+   <div class="form-group">
+     <label id="name-label" for="name">Name</label>
+     <input
+       type="text"
+       name="name"     
+       id="name"     
+       class="form-control"
+       placeholder="Enter your name" 
+       required     
+     />
+   </div>
+   <div class="form-group">
+      <label id="email-label" for="email">Email</label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        class="form-control"
+        placeholder="Enter your Email"
+        required
+     />
+   </div>
+    <div class="form-group">
+      <label id="number-label" for="number">Age<span class="clue">(optional)</span></label>
+      <input 
+         type="number"
+         name="age"    
+         id="number"
+         min="10"
+         max="100"    
+         class="form-control"
+         placeholder="Age"
+       />      
+    </div>
+    <div class="form-group">
+      <p>Wich option best describes your current role?</p>
+      <select id="dropdown" name="role" class=form-control required>
+        <option disabled seleced value>Select current role</option>
+        <option value="student">Student</option>
+        <option value="job">Full Time Job</option>
+        <option value="learner">Full Time Learner</option>
+        <option value="preferNo">Prefer not to say</option>
+        <option value="other">Other</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <p>Do you think your parents ' musical preferences influenced you?</p>
+      <label>
+        <input
+          name="influence"
+          value="definitely"
+          type="radio"
+          class="input-radio"
+          checked
+          />Definitely 
+       </label>
+      <label>
+        <input
+          name="influence"
+          value="maybe"
+          type="radio"
+          class="input-radio"
+          checked
+          />Maybe 
+       </label>
+      <label>
+        <input
+          name="influence"
+          value="no"
+          type="radio"
+          class="input-radio"
+          checked
+          />No
+       </label>
+    </div>
+    <div class="form-group">
+      <p>Do you think your musical preferences change with age?<span class="clue">(Check)</span>
+     </p>
+      <label>
+        <input
+          name="change"
+          value="yes"
+          type="checkbox"
+          class="input-checkbox"
+      />Yes
+      </labeL>
+      <label>
+        <input
+          name="change"
+          value="no"
+          type="checkbox"
+          class="input-checkbox"
+      />No
+      </labeL>
+      <label>
+        <input
+          name="change"
+          value="some"
+          type="checkbox"
+          class="input-checkbox"
+      />Some of the preferences have changed
+      </labeL>
+    </div>
+    <div class="form-group">
+      <p>Any comments?</p>
+      <textarea
+        id="comments"
+        class="input-textarea"
+        name="input"
+        placeholder="Enter your comment here..."
+       >
+      </textarea>
+    </div>
+    <div class="form-group">
+      <button type="submit" id="submit" class="submit-button">
+        Submit
+      </button>
+      
+    </div>
+   </form>
+ </body>
+</div>
